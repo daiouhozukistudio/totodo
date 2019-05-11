@@ -1,0 +1,158 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #383838;
+  font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+#header {
+  max-width: 980px;
+  margin: 0 auto;
+  line-height: 5em;
+}
+
+#header .mainNav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#header .mainNav .title {
+  font-size: 32px;
+}
+
+#header .mainMenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+#header .menuList {
+  margin-right: 1em;
+}
+
+#header .menuList:last-child {
+  margin-right: 0;
+}
+
+.practice {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#todo {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#todo .title {
+  font-size: 32px;
+  color: #383838;
+}
+
+#todo .err {
+  color: #F58E7E;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#todo .todoListAll {
+  color: #383838;
+  margin-top: 50px;
+}
+
+#todo #todoList {
+  margin-top: 100px;
+}
+
+#todo #todoList .newTodo {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: #383838;
+  border: none;
+  border-radius: 5px;
+  background-color: #93B8CA;
+}
+
+#todo #todoList .searchForm {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: #383838;
+  border: none;
+  border-radius: 5px;
+  background-color: #93B8CA;
+  margin-top: 20px;
+  font-family: FontAwesome;
+}
+
+#todo #todoList .todoconponent li {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: #383838;
+  border: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #93B8CA;
+}
+
+#todo #todoList .todoconponent .done {
+  background-color: #FDC44F;
+}
+
+/* 1秒かけて透明度,変形を遷移 */
+.list-complete-enter-active, .list-complete-leave-active {
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,transform 1s;
+  transition: opacity 1s,transform 1s,-webkit-transform 1s;
+}
+
+/* 表示させる時は左側から差し込む*/
+.list-complete-enter {
+  opacity: 0;
+  -webkit-transform: translateX(-150px);
+  transform: translateX(-150px);
+}
+
+/* 消えるときは右へ */
+.list-complete-leave-to {
+  opacity: 0;
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+}
