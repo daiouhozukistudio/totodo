@@ -108,6 +108,10 @@ h2 {
   font-family: FontAwesome;
 }
 
+.todoconponent{
+  padding:0;
+}
+
 #todo #todoList .todoconponent li {
   background-color: #F5F5F5;
   width: 100%;
